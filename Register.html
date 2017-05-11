@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Register</title>
+	</head>
+	
+	<!--CSS -->
+	<style>
+	*{
+		font-family:Serif;
+	}
+	a{
+		text-decoration:none;
+		text-transform:uppercase;
+		color:black;
+	}
+	a:hover{
+		background:black;
+		color:green;
+	}
+	a:active{
+		color:white;
+		background:black;
+	}
+	#banner{
+		height:auto;
+		padding 100px 100px;
+		text-align: center;
+		letter-spacing:2px;
+		text-shadow: 1px 0px 10px white;
+	}
+	
+	p{
+		text-indent:10px;
+	}
+		body{
+		background-color: lightgrey;
+		color: black;
+		
+	}
+	
+	label{
+		vertical-align: text-top;
+		}
+		
+	
+	label{
+			padding: 12px;
+		}
+		
+	#logo{
+		margin: 10px;
+		background-color: white;
+		padding: 10px;
+	}
+		
+	input{
+		padding:10px;
+		}
+		
+	#leftFooter{
+		float:left;
+		width:25%;
+	}
+	
+	#centerFooter{
+		width:50%;
+		
+	}
+	
+	#rightFooter{
+		float:right;
+		width: 25%;
+	}
+		
+	#content{
+		float:left;
+		width: 50%;
+		}
+		
+	#signin{
+		direction: rtl;
+		top 10px;
+		right 10px;
+	}
+	
+	</style>
+	
+	
+	
+	
+	<body>
+	
+	
+	<!-- Top banner -->
+		<div id = "banner">
+		
+		
+			<h1>Banner Information</h1>
+		</div>
+		
+		<div id = "logo">
+		
+			<img src ="foodarIMG.png" alt ="logo">
+			
+		</div>
+		
+		</br><hr>
+		
+		
+		
+		<!-- Navigation Bar -->
+		<header>
+			
+			<div id="signin">
+				
+				<nav>
+				
+					<a href="index.html"> Home </a>
+					
+					<a href="Register.html"> Register </a>
+					
+					<a href="about.html"> About </a>
+				
+				</nav>
+				
+			</div>
+			
+		</header>	
+	
+
+
+	
+	<h1>Register</h1>
+	
+	<p>Please fill out the form below:</p>
+	
+		<div id = "wrapper">
+			
+			<fieldset>
+			
+				<legend>
+				
+					Details
+					
+				</legend>
+				
+					<div id = "content">
+					
+						<label>
+						
+							<input type="email" name ="email" placeholder="Email" method="post" required/>
+							
+						</label>
+						
+					</div>
+					
+					<div id = "content">
+					
+						<label>
+						
+							<input type="password" name="password" placeholder="Password" method="post" required/>
+							
+						</label>
+						
+					</div>
+					
+					<div id = "content">
+					
+						<label>
+						
+							<input type="text" name="firstName" placeholder="First Name" method="post" required/>
+							
+						</label>
+						
+					</div>	
+					
+					<div id = "content">
+					
+						<label>
+						
+							<input type="text" name="lastName" placeholder="Last Name" method="post" required/>
+							
+						</label>
+						
+					</div>
+					
+			</fieldset>
+			
+			
+			
+				</br></br></br></br>
+				
+				
+				
+			<fieldset>
+			
+				<legend>
+				
+					Address
+					
+				</legend>
+				
+					<div id = "content">
+					
+						<label>
+						
+							<input type="text" name="address" placeholder="Address" method="post" required/>
+							
+						</label>
+						
+					</div>
+					
+					<div id = "content">
+					
+						<label>
+						
+							<input type="text" name="street" placeholder="Street" method="post" required/>
+							
+						</label>
+						
+					</div>
+					
+					<div id = "content">
+					
+						<label>
+						
+							<input type="text" name="city" placeholder="City" method="post" required/>
+							
+						</label>
+						
+					</div>
+				
+					<div id = "content">
+					
+						<label>
+						
+							<input type="text" name="zip" placeholder="Zip Code" method="post" required/>
+							
+						</label>
+						
+					</div>
+					
+			</fieldset>
+			
+			<button type="submit">Register</button>
+			
+		</div>
+		
+		
+		
+		</br><hr>
+		<!--Footer information -->
+		<footer>
+		
+			<!-- Left hand side of the footer-->
+			<div id="leftFooter">
+			
+				<h3><a href ="index.html">Home</a></h3>
+				
+				<h3><a href = "about.html">How it Works</a></h3>
+				
+				<h3><a href = "Register.html">Register</a></h3>
+				
+				<p>&copy 2017 All Rights Reserved</p>
+				
+			</div>
+			
+			
+			<!-- Center of the footer -->
+			<div id=centerFooter">
+			
+				<h3><a href ="#">Privacy Policy</a></h3>
+				
+				<h3><a href ="#">Terms and Conditions</a></h3>
+				
+			</div>
+			
+			
+			<!-- Right side of the footer -->
+			<div id ="rightFooter">
+			
+				<p>I hope you enjoy!</p>
+				
+			</div>
+			
+		</footer>
+		
+		
+		
+	</body>
+</html>

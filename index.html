@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to Foodar</title>
+	</head>
+	
+	<style>
+	*{
+		font-family:Serif;
+	}
+	a{
+		text-decoration:none;
+		text-transform:uppercase;
+		color:black;
+	}
+	a:hover{
+		background:black;
+		color:green;
+	}
+	a:active{
+		color:white;
+		background:black;
+	}
+	
+	p{
+		text-indent:10px;
+	}
+	
+	#banner{
+		height:auto;
+		padding 100px 100px;
+		text-align: center;
+		letter-spacing:2px;
+		text-shadow: 1px 0px 10px white;
+	}
+	
+	body{
+		background-color: lightgrey;
+		color: black;
+	}
+	
+	#logo{
+		margin: 10px;
+		background-color: white;
+		padding: 10px;
+	}
+	
+	#leftFooter{
+		float:left;
+		width:25%;
+	}
+	
+	#centerFooter{
+		width:50%;
+		
+	}
+	
+	#rightFooter{
+		float:right;
+		width: 25%;
+	}
+	
+	#signin{
+		direction: rtl;
+		top 10px;
+		right 10px;
+	}
+	
+	zipAndGo{
+	
+	}
+	
+	</style>
+	
+	<body>
+	
+	<script>
+	var x = "2";
+	document.write(x!=2);
+	</script>
+	
+	
+		<!-- Top banner -->
+		<div id = "banner">
+		
+			<h1>Banner Information</h1>
+			
+		</div>
+		
+		<div id = "logo">
+		
+			<img src ="foodarIMG.png" alt ="logo">
+			
+		</div>
+		
+		</br><hr>
+		
+		
+		
+		
+		<!-- Header information and navigation bar-->
+		<header>
+		
+			<div id="signin">
+			
+				<nav>
+				
+					<a href="index.html"> Home </a>
+					
+					<a href="Register.html"> Register </a>
+					
+					<a href="about.html"> About </a>
+					
+				</nav>
+				
+			</div>
+			
+		</header>
+		
+		
+		</br><hr>
+		
+		
+		
+		
+		<!--Zip Code form-->
+		<h1>Find a driver near you!</h1>
+		
+		<p>Type in your zip code below and click Go! to find a driver near you.<p>
+		
+		<div id="zipAndGo">
+		
+			<form>
+			
+				<input type="text" placeholder = "Zip Code" pattern ="[0-9]{5}" required />
+				
+				<button type="submit">Go!</button>
+				
+			</form>
+			
+		</div>
+		
+				
+		</br><hr>
+		
+		
+		
+		
+		<!--Footer information -->
+		<footer>
+		
+			<!-- Left hand side of the footer-->
+			<div id="leftFooter">
+			
+				<h3><a href ="index.html">Home</a></h3>
+				
+				<h3><a href = "about.html">How it Works</a></h3>
+				
+				<h3><a href = "Register.html">Register</a></h3>
+				
+				<p>&copy 2017 All Rights Reserved</p>
+				
+			</div>
+			
+			
+			<!-- Center of the footer -->
+			<div id=centerFooter">
+			
+				<h3><a href ="#">Privacy Policy</a></h3>
+				
+				<h3><a href ="#">Terms and Conditions</a></h3>
+				
+			</div>
+			
+			
+			<!-- Right side of the footer -->
+			<div id ="rightFooter">
+			
+				<p>I hope you enjoy!</p>
+				
+			</div>
+			
+		</footer>
+		
+		
+		
+	</body>
+</html>
