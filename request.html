@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	
-		<title>Welcome to Foodar</title>
 
-		<script type="text/javascript" src="function.js"></script>
-		
-	</head>
-	
-	<style>
+
+<head>
+	<title>Submit Request</title>
+	<script type="text/javascript" src="function.js"></script>
+</head>
+<style>
 	*{
 		font-family:Serif;
 	}
@@ -70,22 +68,28 @@
 		right 10px;
 	}
 	
-	zipAndGo{
-	
+	.big{
+		display:inline-block;
+		width: 200px;
+		height: 100px;
+		background-color:#ff3333;
+		cursor:pointer;
+		color:white;
+		text-shadow:2px 0 black;
+		
 	}
 	
-	</style>
-	
-	<body>
+</style>
 
-	
-	
+<body>
+
 		<!-- Top banner -->
 		<div id = "banner"></div>
 		<script>
 			createBanner();
 		</script>
 
+		
 		<!--Image-->		
 		<div id = "logo">
 		
@@ -123,66 +127,58 @@
 		
 		
 		
-		<!--Zip Code form-->
-		<h1>Find a driver near you!</h1>
-		
-		<p>Type in your zip code below and click Go! to find a driver near you.<p>
-		
-		<div id="zipAndGo">
-		
-			<form>
+		<!-- Submission form to request an order -->
+		<form>
 			
-				<input type="text" placeholder = "Zip Code" pattern ="[0-9]{5}" required />
-				
-				<button type="submit">Go!</button>
-				
-			</form>
+			<h2><label>Address:</label></h2>
 			
-		</div>
-		
+				<input type="text" placeholder="Email" required/>
 				
-		</br><hr>
-		
-		
-		
-		
-		<!--Footer information -->
-		<footer>
-		
-			<!-- Left hand side of the footer-->
-			<div id="leftFooter">
+				
+				</br></br></br>
+				
+				
+			<!-- Choosing the style of food delivery -->
+			<label class="big">CLASSIC</br>This is a clasic treatment</br>
+				
+				<input type="radio" name="style" value="classic" checked/>
+				
+			</label>
 			
-				<h3><a href ="index.html">Home</a></h3>
+			<label class="big">Premium</br>Pinkys up</br>
+			
+				<input type="radio" name="style" value="premium"/>
 				
-				<h3><a href = "about.html">How it Works</a></h3>
+			</label>	
 				
-				<h3><a href = "Register.html">Register</a></h3>
+			<label class="big">Royal</br>Your food is served on a silver platter. Literally.</br>
+			
+				<input type="radio" name="style" value="royal"/>
 				
-				<p>&copy 2017 All Rights Reserved</p>
-				
-			</div>
+			</label>
 			
 			
-			<!-- Center of the footer -->
-			<div id="centerFooter">
 			
-				<h3><a href ="#">Privacy Policy</a></h3>
+			<!--Requesting the restaurant name -->
+			
+			<h2><label>Restaurant:</label></h2>
+			
+				<input type="text" placeholder="Name" required/>
 				
-				<h3><a href ="#">Terms and Conditions</a></h3>
 				
-			</div>
+				</br></br></br>
 			
 			
-			<!-- Right side of the footer -->
-			<div id ="rightFooter">
+			<!--Providing a tip to the delivery drivers -->	
 			
-				<p>I hope you enjoy!</p>
-				
-			</div>
+			<h2><label>Tip:</label></h2>
 			
-		</footer>
-		
-		
-		
-	</body>
+			
+		</form>
+
+
+
+</body>
+
+
 </html>
