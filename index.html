@@ -5,6 +5,9 @@
 		<title>Welcome to Foodar</title>
 
 		<script type="text/javascript" src="function.js"></script>
+		<script>
+			createBanner();
+		</script>
 		
 	</head>
 	
@@ -31,7 +34,9 @@
 	}
 	
 	#banner{
-		height:auto;
+		position:relative;
+		height:100%;
+		width: 100%;
 		padding 100px 100px;
 		text-align: center;
 		letter-spacing:2px;
@@ -45,24 +50,15 @@
 	
 	#logo{
 		margin: 10px;
-		background-color: white;
 		padding: 10px;
-	}
-	
-	#leftFooter{
-		float:left;
-		width:25%;
-	}
-	
-	#centerFooter{
-		width:50%;
+		width:15%;
 		
 	}
 	
-	#rightFooter{
-		float:right;
-		width: 25%;
+	img{
+		background-color:white;
 	}
+	
 	
 	#signin{
 		direction: rtl;
@@ -70,21 +66,45 @@
 		right 10px;
 	}
 	
-	zipAndGo{
+	#zipAndGo{
 	
 	}
 	
+	#content{
+		display:block;
+		background-color:white;
+	}
+	
+	.twentywide{
+		display:block;
+		width:20%;
+		
+	}
+	
+	#wrapper{
+		margin:0 auto;
+		width:100%;
+	}
+	
+	#footer{
+		width:100%;
+		border:1px solid black;
+		background-color:red;
+		margin: 0px 0px 10px 0px;
+		padding:10px;
+	}
+	
+	
 	</style>
 	
-	<body>
-
-	
-	
+	<body onload="createBanner()">
+		
+		
+		<div id="wrapper">
+		
 		<!-- Top banner -->
 		<div id = "banner"></div>
-		<script>
-			createBanner();
-		</script>
+		
 
 		<!--Image-->		
 		<div id = "logo">
@@ -123,66 +143,75 @@
 		
 		
 		
-		<!--Zip Code form-->
-		<h1>Find a driver near you!</h1>
 		
-		<p>Type in your zip code below and click Go! to find a driver near you.<p>
-		
-		<div id="zipAndGo">
-		
-			<form>
+		<div id="content">
+			<h1>Find a driver near you!</h1>
 			
-				<input type="text" placeholder = "Zip Code" pattern ="[0-9]{5}" required />
+			<p>Type in your zip code below and click Go! to find a driver near you.<p>
+		
+		
+			<!--Zip Code form-->
+			<div id="zipAndGo">
+			
+				<form>
 				
-				<button type="submit">Go!</button>
+					<input type="text" placeholder = "Zip Code" pattern ="[0-9]{5}" required />
+					
+					<button type="submit">Go!</button>
+					
+				</form>
 				
-			</form>
+			</div>
+			
+			</br>
 			
 		</div>
-		
 				
+	
 		</br><hr>
 		
 		
 		
-		
 		<!--Footer information -->
-		<footer>
-		
-			<!-- Left hand side of the footer-->
-			<div id="leftFooter">
-			
-				<h3><a href ="index.html">Home</a></h3>
+		<div id="footer">
+			<div class="container">
+				<!-- Left hand side of the footer-->
+				<div class="twentywide">
+					<ul class ="footernav-menu">
+						<li>
+							<li><a href ="index.html">Home</a></li>
+							
+							<li><a href = "about.html">How it Works</a></li>
+							
+							<li><a href = "Register.html">Register</a></li>
+						
+						</li>
+					</ul>
+					
+				</div>
 				
-				<h3><a href = "about.html">How it Works</a></h3>
 				
-				<h3><a href = "Register.html">Register</a></h3>
+				<!-- Center of the footer -->
+				<div class="twentywide">
+					<ul class ="footernav-menu">
+						<li><a href ="#">Privacy Policy</a></li>
+						
+						<li><a href ="#">Terms and Conditions</a></li>
+					</ul>
+				</div>
 				
-				<p>&copy 2017 All Rights Reserved</p>
 				
+				<!-- Right side of the footer -->
+				<div class ="twentywide">
+					<ul class="footernav-menu">
+						<li>I hope you enjoy!</li>
+						<li>&copy 2017 All Rights Reserved</li>
+					<ul>
+				</div>
 			</div>
-			
-			
-			<!-- Center of the footer -->
-			<div id="centerFooter">
-			
-				<h3><a href ="#">Privacy Policy</a></h3>
-				
-				<h3><a href ="#">Terms and Conditions</a></h3>
-				
-			</div>
-			
-			
-			<!-- Right side of the footer -->
-			<div id ="rightFooter">
-			
-				<p>I hope you enjoy!</p>
-				
-			</div>
-			
-		</footer>
+		</div>
 		
 		
-		
+	</div>	
 	</body>
 </html>
