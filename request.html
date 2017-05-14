@@ -4,91 +4,18 @@
 
 <head>
 	<title>Submit Request</title>
+	<link rel="stylesheet" type="text/css" href="foodar.css">
 	<script type="text/javascript" src="function.js"></script>
 </head>
-<style>
-	*{
-		font-family:Serif;
-	}
-	a{
-		text-decoration:none;
-		text-transform:uppercase;
-		color:black;
-	}
-	a:hover{
-		background:black;
-		color:green;
-	}
-	a:active{
-		color:white;
-		background:black;
-	}
-	
-	p{
-		text-indent:10px;
-	}
-	
-	#banner{
-		height:auto;
-		padding 100px 100px;
-		text-align: center;
-		letter-spacing:2px;
-		text-shadow: 1px 0px 10px white;
-	}
-	
-	body{
-		background-color: lightgrey;
-		color: black;
-	}
-	
-	#logo{
-		margin: 10px;
-		background-color: white;
-		padding: 10px;
-	}
-	
-	#leftFooter{
-		float:left;
-		width:25%;
-	}
-	
-	#centerFooter{
-		width:50%;
-		
-	}
-	
-	#rightFooter{
-		float:right;
-		width: 25%;
-	}
-	
-	#signin{
-		direction: rtl;
-		top 10px;
-		right 10px;
-	}
-	
-	.big{
-		display:inline-block;
-		width: 200px;
-		height: 100px;
-		background-color:#ff3333;
-		cursor:pointer;
-		color:white;
-		text-shadow:2px 0 black;
-		
-	}
-	
-</style>
 
-<body>
 
+<body onload="createBanner()">
+
+		<div id="wrapper">
+		
+		
 		<!-- Top banner -->
 		<div id = "banner"></div>
-		<script>
-			createBanner();
-		</script>
-
 		
 		<!--Image-->		
 		<div id = "logo">
@@ -115,6 +42,8 @@
 					
 					<a href="about.html"> About </a>
 					
+					<a href="request.html"> Order </a>
+					
 				</nav>
 				
 			</div>
@@ -131,7 +60,6 @@
 		<form>
 			
 			<h2><label>Address:</label></h2>
-			
 				<input type="text" placeholder="Email" required/>
 				
 				
@@ -140,21 +68,17 @@
 				
 			<!-- Choosing the style of food delivery -->
 			<label class="big">CLASSIC</br>This is a clasic treatment</br>
-				
 				<input type="radio" name="style" value="classic" checked/>
-				
 			</label>
 			
-			<label class="big">Premium</br>Pinkys up</br>
 			
-				<input type="radio" name="style" value="premium"/>
-				
+			<label class="big">Premium</br>Pinkys up</br>
+				<input type="radio" name="style" value="premium"/>	
 			</label>	
 				
-			<label class="big">Royal</br>Your food is served on a silver platter. Literally.</br>
-			
-				<input type="radio" name="style" value="royal"/>
 				
+			<label class="big">Royal</br>Your food is served on a silver platter. Literally.</br>
+				<input type="radio" name="style" value="royal"/>
 			</label>
 			
 			
@@ -162,7 +86,6 @@
 			<!--Requesting the restaurant name -->
 			
 			<h2><label>Restaurant:</label></h2>
-			
 				<input type="text" placeholder="Name" required/>
 				
 				
@@ -172,12 +95,58 @@
 			<!--Providing a tip to the delivery drivers -->	
 			
 			<h2><label>Tip:</label></h2>
+					<label class="big">10%</br>They did their job.</br>
+						<input type="radio" name="tip" value="10" checked/>
+					</label>
+					
+					
+					<label class="big">15%</br>They made you feel special.</br>
+						<input type="radio" name="tip" value="15"/>
+					</label>
+					
+					
+					<label class="big">20%</br>I want to give more, but this is all I have!</br>
+						<input type="radio" name="tip" value="20" />
+					</label>
 			
+			
+			</br></br></br>
+			
+			<button type="submit">REQUEST</button>
 			
 		</form>
 
-
-
+		
+		</br></br></br></br>
+		
+		<!--Footer information -->
+		<div id="footer">
+			<table style="width:100%">
+			
+				<tr>
+					<td><a href="index.html">Home</a></td>
+					<td><a href="#">Privacy Policy</a><td>
+					<td>Enjoy!<td>	
+				</tr>
+				
+				
+				
+				<tr>
+					<td><a href="about.html">How It Works</a></td>
+					<td><a href ="#">Terms and Conditions</a></td>
+				</tr>
+				
+				
+				
+				<tr>
+					<td><a href = "Register.html">Register</a></td>
+					<td>&copy 2017 All Rights Reserved</td>
+				</tr>
+				
+				
+			</table>
+		</div>
+	</div>
 </body>
 
 

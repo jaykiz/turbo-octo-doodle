@@ -23,3 +23,20 @@ function createBanner(){
 	ban.appendChild(info);
 }
 
+
+function calculateStyle(style){
+	
+	
+}
+
+
+function calculateTip(tip){
+	
+	
+}
+
+
+function calculateTotal(){
+	
+	
+}

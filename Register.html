@@ -2,103 +2,18 @@
 <html>
 	<head>
 	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="foodar.css">
 	<script type="text/javascript" src="function.js"></script>
 	</head>
 	
-	<!--CSS -->
-	<style>
-	*{
-		font-family:Serif;
-	}
-	a{
-		text-decoration:none;
-		text-transform:uppercase;
-		color:black;
-	}
-	a:hover{
-		background:black;
-		color:green;
-	}
-	a:active{
-		color:white;
-		background:black;
-	}
-	#banner{
-		height:auto;
-		padding 100px 100px;
-		text-align: center;
-		letter-spacing:2px;
-		text-shadow: 1px 0px 10px white;
-	}
-	
-	p{
-		text-indent:10px;
-	}
-		body{
-		background-color: lightgrey;
-		color: black;
-		
-	}
-	
-	label{
-		vertical-align: text-top;
-		}
-		
-	
-	label{
-			padding: 12px;
-		}
-		
-	#logo{
-		margin: 10px;
-		background-color: white;
-		padding: 10px;
-	}
-		
-	input{
-		padding:10px;
-		}
-		
-	#leftFooter{
-		float:left;
-		width:25%;
-	}
-	
-	#centerFooter{
-		width:50%;
-		
-	}
-	
-	#rightFooter{
-		float:right;
-		width: 25%;
-	}
-		
-	#content{
-		float:left;
-		width: 50%;
-		}
-		
-	#signin{
-		direction: rtl;
-		top 10px;
-		right 10px;
-	}
-	
-	</style>
 	
 	
+	<body onload="createBanner()">
 	
-	
-	<body>
-	
+	<div id="wrapper">
 	
 	<!-- Top banner -->
 		<div id = "banner"></div>
-		<script>
-			createBanner();
-		</script>
-		
 		
 	<!--Image-->	
 		<div id = "logo">
@@ -123,6 +38,8 @@
 					<a href="Register.html"> Register </a>
 					
 					<a href="about.html"> About </a>
+					
+					<a href="request.html"> Order </a>
 				
 				</nav>
 				
@@ -137,7 +54,7 @@
 	
 	<p>Please fill out the form below:</p>
 	
-		<div id = "wrapper">
+		
 			
 			<fieldset>
 			
@@ -247,48 +164,41 @@
 			
 			<button type="submit">Register</button>
 			
-		</div>
 		
 		
 		
-		</br><hr>
-		<!--Footer information -->
-		<footer>
 		
-			<!-- Left hand side of the footer-->
-			<div id="leftFooter">
-			
-				<h3><a href ="index.html">Home</a></h3>
-				
-				<h3><a href = "about.html">How it Works</a></h3>
-				
-				<h3><a href = "Register.html">Register</a></h3>
-				
-				<p>&copy 2017 All Rights Reserved</p>
-				
-			</div>
-			
-			
-			<!-- Center of the footer -->
-			<div id="centerFooter">
-			
-				<h3><a href ="#">Privacy Policy</a></h3>
-				
-				<h3><a href ="#">Terms and Conditions</a></h3>
-				
-			</div>
-			
-			
-			<!-- Right side of the footer -->
-			<div id ="rightFooter">
-			
-				<p>I hope you enjoy!</p>
-				
-			</div>
-			
-		</footer>
+		</br></br></br></br>
 		
 		
 		
+	<!--Footer information -->
+	<div id="footer">
+		<table style="width:100%">
+		
+			<!--Column One-->
+			<tr>
+				<td><a href="index.html">Home</a></td>
+				<td><a href="#">Privacy Policy</a><td>
+				<td>Enjoy!<td>
+			</tr>
+			
+			<!--Column Two-->
+			<tr>
+				<td><a href="about.html">How It Works</a></td>
+				<td><a href ="#">Terms and Conditions</a></td>
+			</tr>
+			
+			<!--Column Three-->
+			<tr>
+				<td><a href = "Register.html">Register</a></td>
+				<td>&copy 2017 All Rights Reserved</td>
+			</tr>
+			
+			
+		</table>
+	</div>		
+		
+	</div>	
 	</body>
 </html>

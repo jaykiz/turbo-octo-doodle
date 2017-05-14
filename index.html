@@ -3,99 +3,12 @@
 	<head>
 	
 		<title>Welcome to Foodar</title>
-
+		<link rel="stylesheet" type="text/css" href="foodar.css">
 		<script type="text/javascript" src="function.js"></script>
-		<script>
-			createBanner();
-		</script>
+		
 		
 	</head>
 	
-	<style>
-	*{
-		font-family:Serif;
-	}
-	a{
-		text-decoration:none;
-		text-transform:uppercase;
-		color:black;
-	}
-	a:hover{
-		background:black;
-		color:green;
-	}
-	a:active{
-		color:white;
-		background:black;
-	}
-	
-	p{
-		text-indent:10px;
-	}
-	
-	#banner{
-		position:relative;
-		height:100%;
-		width: 100%;
-		padding 100px 100px;
-		text-align: center;
-		letter-spacing:2px;
-		text-shadow: 1px 0px 10px white;
-	}
-	
-	body{
-		background-color: lightgrey;
-		color: black;
-	}
-	
-	#logo{
-		margin: 10px;
-		padding: 10px;
-		width:15%;
-		
-	}
-	
-	img{
-		background-color:white;
-	}
-	
-	
-	#signin{
-		direction: rtl;
-		top 10px;
-		right 10px;
-	}
-	
-	#zipAndGo{
-	
-	}
-	
-	#content{
-		display:block;
-		background-color:white;
-	}
-	
-	.twentywide{
-		display:block;
-		width:20%;
-		
-	}
-	
-	#wrapper{
-		margin:0 auto;
-		width:100%;
-	}
-	
-	#footer{
-		width:100%;
-		border:1px solid black;
-		background-color:red;
-		margin: 0px 0px 10px 0px;
-		padding:10px;
-	}
-	
-	
-	</style>
 	
 	<body onload="createBanner()">
 		
@@ -130,6 +43,8 @@
 					<a href="Register.html"> Register </a>
 					
 					<a href="about.html"> About </a>
+					
+					<a href="request.html"> Order </a>
 					
 				</nav>
 				
@@ -168,48 +83,28 @@
 		</div>
 				
 	
-		</br><hr>
+		</br></br></br></br>
 		
 		
 		
 		<!--Footer information -->
-		<div id="footer">
-			<div class="container">
-				<!-- Left hand side of the footer-->
-				<div class="twentywide">
-					<ul class ="footernav-menu">
-						<li>
-							<li><a href ="index.html">Home</a></li>
-							
-							<li><a href = "about.html">How it Works</a></li>
-							
-							<li><a href = "Register.html">Register</a></li>
-						
-						</li>
-					</ul>
-					
-				</div>
-				
-				
-				<!-- Center of the footer -->
-				<div class="twentywide">
-					<ul class ="footernav-menu">
-						<li><a href ="#">Privacy Policy</a></li>
-						
-						<li><a href ="#">Terms and Conditions</a></li>
-					</ul>
-				</div>
-				
-				
-				<!-- Right side of the footer -->
-				<div class ="twentywide">
-					<ul class="footernav-menu">
-						<li>I hope you enjoy!</li>
-						<li>&copy 2017 All Rights Reserved</li>
-					<ul>
-				</div>
-			</div>
-		</div>
+	<div id="footer">
+		<table style="width:100%">
+			<tr>
+				<td><a href="index.html">Home</a></td>
+				<td><a href="#">Privacy Policy</a><td>
+				<td>Enjoy!<td>
+			</tr>
+			<tr>
+				<td><a href="about.html">How It Works</a></td>
+				<td><a href ="#">Terms and Conditions</a></td>
+			</tr>
+			<tr>
+				<td><a href = "Register.html">Register</a></td>
+				<td>&copy 2017 All Rights Reserved</td>
+			</tr>
+		</table>
+	</div>
 		
 		
 	</div>	
