@@ -4,23 +4,20 @@
 
 <head>
 	<title>Submit Request</title>
-	<link rel="stylesheet" type="text/css" href="foodar.css">
+	<link rel="stylesheet" type="text/css" href="foodar.css"/>
 	<script type="text/javascript" src="function.js"></script>
 </head>
 
 
-<body onload="createBanner()">
+<body>
 
 		<div id="wrapper">
 		
 		
-		<!-- Top banner -->
-		<div id = "banner"></div>
-		
 		<!--Image-->		
 		<div id = "logo">
 		
-			<img src ="foodarIMG.png" alt ="logo">
+			<img src ="foodarIMG.png" alt ="logo"/>
 			
 		</div>
 		
@@ -51,7 +48,7 @@
 		</header>
 		
 		
-		</br><hr>
+		</br>
 		
 		
 		
@@ -68,17 +65,17 @@
 				
 			<!-- Choosing the style of food delivery -->
 			<label class="big">CLASSIC</br>This is a clasic treatment</br>
-				<input type="radio" name="style" value="classic" checked/>
+				<input id="style" type="radio" name="style" value="classic" onclick="calculateStyle(value)" checked/>
 			</label>
 			
 			
 			<label class="big">Premium</br>Pinkys up</br>
-				<input type="radio" name="style" value="premium"/>	
+				<input id="style" type="radio" name="style" value="premium" onclick="calculateStyle(value)"/>	
 			</label>	
 				
 				
 			<label class="big">Royal</br>Your food is served on a silver platter. Literally.</br>
-				<input type="radio" name="style" value="royal"/>
+				<input id="style" type="radio" name="style" value="royal" onclick="calculateStyle(value)"/>
 			</label>
 			
 			
@@ -86,7 +83,7 @@
 			<!--Requesting the restaurant name -->
 			
 			<h2><label>Restaurant:</label></h2>
-				<input type="text" placeholder="Name" required/>
+				<input type="text" placeholder="Name of Restaurant" required/>
 				
 				
 				</br></br></br>
@@ -96,21 +93,25 @@
 			
 			<h2><label>Tip:</label></h2>
 					<label class="big">10%</br>They did their job.</br>
-						<input type="radio" name="tip" value="10" checked/>
+						<input id="tip" type="radio" name="tip" value="10" onclick="calculateTip(value)" checked/>
 					</label>
 					
 					
 					<label class="big">15%</br>They made you feel special.</br>
-						<input type="radio" name="tip" value="15"/>
+						<input id="tip" type="radio" name="tip" value="15" onclick="calculateTip(value)" />
 					</label>
 					
 					
 					<label class="big">20%</br>I want to give more, but this is all I have!</br>
-						<input type="radio" name="tip" value="20" />
+						<input id="tip" type="radio" name="tip" value="20" onclick="calculateTip(value)" />
 					</label>
 			
 			
 			</br></br></br>
+			
+			
+			<div id="total"></div>
+			
 			
 			<button type="submit">REQUEST</button>
 			
@@ -125,8 +126,8 @@
 			
 				<tr>
 					<td><a href="index.html">Home</a></td>
-					<td><a href="#">Privacy Policy</a><td>
-					<td>Enjoy!<td>	
+					<td><a href="#">Privacy Policy</a></td>
+					<td>Enjoy!</td>	
 				</tr>
 				
 				

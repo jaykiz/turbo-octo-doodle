@@ -3,26 +3,56 @@
 	<head>
 	
 		<title>Welcome to Foodar</title>
-		<link rel="stylesheet" type="text/css" href="foodar.css">
+		<link rel="stylesheet" type="text/css" href="foodar.css"/>
 		<script type="text/javascript" src="function.js"></script>
 		
 		
 	</head>
 	
 	
-	<body onload="createBanner()">
+	<body>
 		
 		
 		<div id="wrapper">
 		
 		<!-- Top banner -->
-		<div id = "banner"></div>
 		
-
+			<div id="banner"></div>
+				<script>
+					
+					function createBanner(){
+						var ban = document.getElementById("banner");
+						ban.style.border = "1px solid black"; 
+						ban.style.background="black";
+						ban.style.color="white";
+						
+						var info = document.createElement("h2");
+						info.innerHTML = "Banner Information";
+						ban.appendChild(info);
+						
+						var btn = document.createElement("BUTTON");
+						btn.setAttribute("type", "submit");
+						var btnText = document.createTextNode("x");
+						btn.appendChild(btnText);
+						ban.insertBefore(btn, info);
+						btn.style.float="right";
+						btn.addEventListener("click", closeBanner);
+						
+							function closeBanner(){
+								 this.parentElement.style.display="none";
+							}
+						
+						
+						}
+						
+						setTimeout(createBanner, 3000);
+					
+				</script>
+				
 		<!--Image-->		
 		<div id = "logo">
 		
-			<img src ="foodarIMG.png" alt ="logo">
+			<img src ="foodarIMG.png" alt ="logo"/>
 			
 		</div>
 		
@@ -53,7 +83,7 @@
 		</header>
 		
 		
-		</br><hr>
+		</br>
 		
 		
 		
@@ -62,7 +92,7 @@
 		<div id="content">
 			<h1>Find a driver near you!</h1>
 			
-			<p>Type in your zip code below and click Go! to find a driver near you.<p>
+			<p>Type in your zip code below and click Go! to find a driver near you.</p>
 		
 		
 			<!--Zip Code form-->
@@ -92,8 +122,8 @@
 		<table style="width:100%">
 			<tr>
 				<td><a href="index.html">Home</a></td>
-				<td><a href="#">Privacy Policy</a><td>
-				<td>Enjoy!<td>
+				<td><a href="#">Privacy Policy</a></td>
+				<td>Enjoy!</td>
 			</tr>
 			<tr>
 				<td><a href="about.html">How It Works</a></td>
