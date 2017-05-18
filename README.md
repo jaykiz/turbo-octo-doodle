@@ -13,3 +13,5 @@ Edit #2: Implemented JS page and began creating the request.html
 Edit #3: Made some proposed CSS changes to the index.html. Reformatted the footer
 
 Edit #4: Extended CSS to a new file. Finished wiring project together. Changed footer format. 
+
+Edit 5#: New implementation, debugged and cleaned errors
