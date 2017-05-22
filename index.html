@@ -96,17 +96,41 @@
 		
 		
 			<!--Zip Code form-->
-			<div id="zipAndGo">
 			
-				<form>
+			
 				
-					<input type="text" placeholder = "Zip Code" pattern ="[0-9]{5}" required />
-					
-					<button type="submit">Go!</button>
-					
-				</form>
 				
-			</div>
+					<input type="text" placeholder="Zip Code" pattern ="[0-9]{5}" name="zip" required />
+					
+					<button id="checker">Go!</button>
+					
+					<script>
+						var b = document.getElementById("checker");
+
+						b.addEventListener("click", function checkZipCode(zip){
+						var zip = document.querySelector('[name="zip"]').value;
+						var zipFound = false;
+						var zipCodes=[26505, 26501, 26507, 26506];
+
+							for(i=0; i<=zipCodes.length-1; i++){
+								if(zip == zipCodes[i]){
+									zipFound=true;
+									console.log(zipFound);
+									alert("We\’ve got your area covered!");
+									break;
+								}
+								
+							}
+							
+							if(!zipFound){
+								alert("Sorry, we haven\’t expanded to that area yet.")
+							}
+								
+						}); 
+					</script>			
+				
+				
+			
 			
 			</br>
 			

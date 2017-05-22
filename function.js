@@ -11,8 +11,9 @@ function getZip(zipcode){
 	
 }
 
+
 	
-}
+
 
 var style = 0;
 function calculateStyle(value){
