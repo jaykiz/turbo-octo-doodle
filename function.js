@@ -61,7 +61,7 @@ function calculateTotal(style, tip){
 	var total = style+temp;
 	
 	var totalDiv=document.getElementById("total");
-	var totalHeader = document.createElement("h2");
-	totalHeader.innerHTML = "Total: "+total;
-	totalDiv.appendChild(totalHeader);
+
+	totalDiv.innerHTML = "Total: "+total;
+	
 }
