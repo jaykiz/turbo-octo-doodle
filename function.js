@@ -33,11 +33,11 @@ function calculateStyle(value){
 			style=10.00;
 		}
 		
-	
+	calculateTotal(style, tip);
 }
 
 
-var tip =0;
+var tip =0.10;
 function calculateTip(value){
 	var tipType = document.getElementById("tip");
 	var y = value;

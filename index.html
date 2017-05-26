@@ -51,9 +51,9 @@
 				
 		<!--Image-->		
 		<div id = "logo">
-		
-			<img src ="foodarIMG.png" alt ="logo"/>
-			
+			<a href="index.html">
+				<img src ="foodarIMG.png" alt ="logo">
+			</a>
 		</div>
 		
 		</br><hr>
@@ -67,8 +67,6 @@
 			<div id="signin">
 			
 				<nav>
-				
-					<a href="index.html"> Home </a>
 					
 					<a href="Register.html"> Register </a>
 					
@@ -87,9 +85,17 @@
 		
 		
 		
+		<div id="wrap">
+			<div>
+					<h1 id="textOverImage">Foodar Pick of the Week</h1>
+			</div>
+		</div>
 		
 		
-		<div id="content">
+		
+		<div id="aboutContent">
+			
+			
 			<h1>Find a driver near you!</h1>
 			
 			<p>Type in your zip code below and click Go! to find a driver near you.</p>
@@ -99,8 +105,8 @@
 			
 			
 				
-				<form action = "request.html" method="post">
-					<input type="text" placeholder="Zip Code" pattern ="[0-9]{5}" name="zip" required />
+				<form>
+					<input type="number" placeholder="Zip Code" pattern ="[0-9]{5}" name="zip" required />
 					
 					<button id="checker">Go!</button>
 				</form>	
@@ -129,7 +135,7 @@
 							}
 							
 							else if(valid==false){
-								alert("not a valid zipcode");
+								alert("Not a valid Zip Code. Please try again.");
 							}
 							
 							if(valid==true && zipFound ==false){
